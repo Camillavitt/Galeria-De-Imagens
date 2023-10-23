@@ -1,0 +1,141 @@
+@charset "utf-8" ;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f9f9;
+    margin: 2%;
+    background: rgb(15,9,143);
+background: radial-gradient(circle, rgba(15,9,143,1) 0%, rgba(32,30,99,1) 29%, rgba(3,56,103,1) 49%, rgba(17,19,78,1) 113%);
+    
+}
+
+header p{
+    color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.main-header{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.main-header h1 {
+
+    font-size: 4em;
+    margin-bottom: 1em;
+    margin-top: 3%;
+    line-height: 1.2;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 0px rgb(79, 91, 207);
+    color: #fdfdfd;
+    
+}
+
+.main-header h1 span{
+    color: #750606
+}
+
+.main-header p{
+    font-size: 25px;
+    text-align: justify;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2em;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    background: #2d6ac5;
+    margin-bottom: 2em;
+}
+
+img{
+    width: 100%;
+}
+
+.card h3{
+    margin-bottom: 2em;
+}
+
+.card div{
+    padding: 2em;
+}
+
+.card:nth-child(even) img{
+    order: 2
+}
+
+.btn{
+    display: inline-block;
+    background: #0f3046e7;
+    color: #ffffff9a;
+    padding: 0.7em 1.8em;
+    margin-top: 2em;
+    cursor: default;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    box-shadow: 4px 4px 4px #000;
+    background: rgba(12, 13, 48, 0.692);
+}
+
+body{
+    background-color: rgb(75, 116, 170);
+}
+
+.galeria{
+    display: flex;
+    height: 20em;
+    margin: 2em;
+    gap: 0.5em;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all 0.8s cubic-bezier(1, 0.82, 0.165, 1);
+}
+
+.galeria div:hover{
+    flex: 2;
+}
+
+.galeria:hover div:not(:hover) {
+    filter: blur(3px);
+    filter: grayscale(1);
+
+}
+
+footer{
+    font-size: 18px;
+    color: #f9f9f9;
+    background-color: #09111b;
+}
+
+p{
+    text-align: justify;
+}
